@@ -1,0 +1,36 @@
+.search{
+    max-width: 129px;
+    max-height: 38px;
+    border-radius: 20px;
+    border: 1px solid #494953;
+    background-color: #3B3B44;
+    color: white;
+    margin-left: 30px;
+    padding-left: 60px;
+}
+.search::placeholder{
+    color: white;
+}
+.search:focus {
+    color: white;
+    background-color: #494953;
+    outline: 0;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-width: 553px;
+    min-height: 38px;
+}
+.img {
+
+    position: absolute;
+    right: 105px;
+    top: 8px;
+}
+
+.smallsearch {
+    position: relative;
+}

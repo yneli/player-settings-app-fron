@@ -1,0 +1,19 @@
+.header{
+    min-height: 71px;
+    background-color: #3B3B44;
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0px 25px ;
+    align-items: center;
+
+    
+
+}
+.headerHud {
+    display: flex;
+    gap: 290px;
+}

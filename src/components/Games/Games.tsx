@@ -1,14 +1,13 @@
 import style from "./Games.module.scss";
 import { SmallSearch } from "../SmallSearch/SmallSearch";
 import { GameItems } from "../GameItems/GameItems";
+import React from "react";
+import { Dropdown } from "../Dropdown/Dropdown";
+
 export const Games = () => {
     return <div className={style.games}>
         <div className={style.sorted}>
-            <div className={style.sortbar}>
-                <h3>Sort by</h3>
-                <div className={style.switcher}><p>Viewers (High to Low)</p>
-                    <img src="./assets/Switcher.svg" alt=""/></div>
-            </div>
+            <Dropdown/>
             <SmallSearch/>
         </div>
         <div className={style.items}>

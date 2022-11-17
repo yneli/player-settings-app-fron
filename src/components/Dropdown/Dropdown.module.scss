@@ -1,0 +1,27 @@
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+}
+.menu {
+    position: absolute;
+    left: 70px;
+    top: 13px;
+    right: 0;
+    background-color: #494953;
+    border-radius: 0px 0px 15px 15px;
+    max-width: 150px;
+    padding: 15px 15px;
+}
+.switcher {
+    background-color: #494953;
+    border-radius: 15px;
+    padding: 5px 10px;
+    display: flex;
+    gap: 5px;
+}
+.active {
+    transform: rotate(180deg);
+
+}

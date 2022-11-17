@@ -3,10 +3,10 @@ import clsx from "clsx";
 import style from "./Sidebaritem.module.scss";
 import { Link } from "react-router-dom";
 import React from "react";
+
 export const Sidebaritem = ({ 
     title, path, icon, nested, active, target }: 
     SidebarItemProps & { active?: boolean, target?: React.MouseEventHandler<HTMLDivElement> }) => {
-    const [isCollapsed, setIsCollapsed] = React.useState(true);
     return <>
         <Link style={{ color: "inherit", textDecoration: "inherit"}} className={style.link} to={path}>
             <div onClick={target} className={clsx(style.sidebarItem, {

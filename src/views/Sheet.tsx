@@ -11,6 +11,7 @@ export const Sheet = () => {
             <Sidebar/>
             <Routes> 
                 <Route path="/" element={<Games/>}/>
+                <Route path="//:id" element={<Games/>}/>
                 <Route path="/sensitivity" element={<SensCalc/>}/>
             </Routes>
         </Layout>

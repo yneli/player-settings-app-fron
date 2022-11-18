@@ -3,6 +3,7 @@
     flex-direction: column;
     position: relative;
     cursor: pointer;
+
 }
 .menu {
     position: absolute;
@@ -12,12 +13,12 @@
     background-color: #494953;
     border-radius: 0px 0px 15px 15px;
     max-width: 150px;
-    padding: 15px 15px;
+    padding: 15px 11px;
 }
 .switcher {
     background-color: #494953;
-    border-radius: 15px;
-    padding: 5px 10px;
+    border-radius: 20px;
+    padding: 7px 10px;
     display: flex;
     gap: 5px;
 }

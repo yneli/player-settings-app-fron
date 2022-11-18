@@ -13,7 +13,7 @@ export const Dropdown = () => {
         setOpen(false);};
 
     const handleMenuTwo = () => {
-        setTitle("Low viewers")
+        setTitle("Low viewers");
         setOpen(false);};
     const handleOutsideClick = (event:any) => {
         const path = event.path || (event.composedPath && event.composedPath());

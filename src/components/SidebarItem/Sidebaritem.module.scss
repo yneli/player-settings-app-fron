@@ -3,6 +3,9 @@
     gap: 10px;
     cursor: pointer;
     position: relative;
+    &:hover{
+        opacity: 0.33;
+    }
 }
 
 .active::before {

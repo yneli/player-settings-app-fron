@@ -8,12 +8,30 @@
     justify-content: space-between;
     color: white;
     padding: 0px 25px ;
-    align-items: center;
-
-    
-
+    align-items: baseline;
+    padding-top: 7px;
+    z-index: 50;
 }
 .headerHud {
     display: flex;
-    gap: 290px;
+    justify-content: space-between;
+
 }
+
+.buttons {
+    gap: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 850px) {
+    .header{
+        padding: 0px 0px ;
+
+    }
+    .buttons {
+        display: flex;
+        gap: 0px;
+    }
+  }
+

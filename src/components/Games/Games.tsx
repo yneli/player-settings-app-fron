@@ -16,7 +16,10 @@ export const Games = () => {
             <GameItems/>
             <GameItems/>
             <GameItems/>
-            <GameItems/>       
+            <GameItems/>
+            <GameItems/>
+            <GameItems/>
+            <GameItems/>
         </div>
     </div>;
 };

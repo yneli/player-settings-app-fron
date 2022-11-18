@@ -1,17 +1,11 @@
 .games {
-    min-width: 1180px;
+    width: 100%;
     padding-top: 100px;
-    padding-left: 150px;
     display: flex;
     flex-direction: column;
     gap: 25px;
+}
 
-}
-.sortbar{
-    display: flex;
-    gap: 13px;
-    align-items: baseline;
-}
 .switcher {
     background-color: #494953;
     border-radius: 15px;
@@ -21,15 +15,27 @@
 }
 
 .items {
+    gap: 1px;
     display: flex;
-    gap: 14px;
     flex-wrap: wrap;
-    width: 100%
 }
 .sorted {
     display: flex;
     justify-content: space-between;
-    padding-right: 87px;
+    max-width: 930px;
+
+
+ 
 }
 
+@media screen and (max-width: 1400px) {
+    .items { 
+        
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .sorted {
+        justify-content: flex-start;
 
+    }
+  }

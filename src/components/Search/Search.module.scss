@@ -1,12 +1,15 @@
 .search{
-    min-width: 450px;
-    max-height: 38px;
+    
+    height: 38px;
     border-radius: 20px;
     border: 1px solid #494953;
     background-color: #3B3B44;
     color: white;
     margin-left: 30px;
     padding-left: 23px;
+    &:hover{
+        border: 1px solid white;
+    }
 }
 .search:focus {
     color: white;
@@ -17,12 +20,12 @@
 .container {
     display: flex;
     align-items: center;
-    min-width: 553px;
+
     min-height: 38px;
     position: relative;
 }
 .img {
     position: absolute;
-    right: 87px;
-    top: 18px;
+    right: 10px;
+    top: 8px;
 }

@@ -1,0 +1,13 @@
+.button {
+    display: flex;
+    max-width: 129px;
+    height: 38px;
+    background-color: #494953;
+    border-radius: 20px;
+    padding: 5px;
+    border: 1px solid white;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.33;
+    }
+}

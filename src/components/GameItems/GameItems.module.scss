@@ -1,4 +1,14 @@
 .gameitems {
+    
 
 }
 
+
+
+@media screen and (max-width: 850px) {
+    .gameitems {
+        flex-direction: 50%;
+
+    }
+  
+  }

@@ -40,3 +40,18 @@
 
     }
   }
+
+  @media screen and (max-width: 850px) {
+    .sorted {
+        display: none;
+
+    }
+    .games {
+        padding-top: 0px;
+    }
+    .items { 
+        gap: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }

@@ -10,9 +10,7 @@
     align-items: center;
     position: sticky;
     z-index: 50;
-
- 
-
+    width: 100%;
 }
 .headerHud {
     display: flex;
@@ -35,5 +33,15 @@
     .buttons {
         display: flex;
         gap: 0px;
+    }
+  }
+
+
+  @media screen and (max-width: 820px) {
+    .title {
+        display: none;
+    }
+    .buttons {
+        display: none;
     }
   }

@@ -3,13 +3,24 @@
     flex-direction: column;
     background-color: #494953;
     min-width: 218px;
-    min-height: 100%;
+    min-height: 400px;
     padding-top: 25px;
     padding-left: 23px;
-    gap: 22px;
-    border-radius: 0px 15px 0px 0px;
+    gap: 1px;
+    border-radius: 0px 15px 15px 0px;  
+    position: sticky;
+    margin-top: 100px
 
+};
 
+.menu {
+    padding-left: 110px;
+    margin-bottom:  20px;
+    color: black;
+    background-color: yellow;
+    font-weight: bold; 
+}
+.container {
     
-    
+
 }

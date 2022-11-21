@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.about {
+    display: flex;
+    align-items: center;
+}
+.search {
+    align-items: flex-end;
+}
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}

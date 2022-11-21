@@ -1,0 +1,34 @@
+.container {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    gap: 1px;
+};
+.player {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: #494953;
+    height: 488px;
+    border-radius: 13px
+};
+.who {
+    display: flex;
+    flex-direction: column;
+};
+.device {
+    width: 500px;
+    height: 488px;
+    background-color: #494953;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 13px
+};
+
+.img {
+    height: 295px;
+    width: 295px;
+    border-radius: 15px 15px 15px 15px;
+}

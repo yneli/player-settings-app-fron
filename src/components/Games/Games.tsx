@@ -11,6 +11,7 @@ export const Games = () => {
             <SmallSearch/>
         </div>
         <div className={style.items}>
+        <GameItems/>
             <GameItems/>
             <GameItems/>
             <GameItems/>
@@ -20,6 +21,10 @@ export const Games = () => {
             <GameItems/>
             <GameItems/>
             <GameItems/>
+            <GameItems/>
+            <GameItems/>
+            <GameItems/>
+          
         </div>
     </div>;
 };

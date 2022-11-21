@@ -4,25 +4,30 @@
     cursor: pointer;
     position: relative;
     &:hover{
-        opacity: 0.33;
+        color: rgb(240, 48, 112);
+        transform: translate(-1px, -2px) rotate(-1deg);
     }
 }
-
-.active::before {
+.active:before {
     content: "";
     position: absolute;
-    right: 7px;
-    top: 22px;
+    right: 17px;
+    top: 23px;
     height: 100%;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 17px;
+    height: 17px;
     border-radius: 50%;
     border-style: solid;
     border-width: 2px;
-    border-color: rgb(255, 255, 255);
+    border-color: yellow;
     background-color: rgba(0, 0, 0, 0);
     pointer-events:none;
+}
 
+
+.items{
+    display: flex;
+    gap: 5px;
 
 }

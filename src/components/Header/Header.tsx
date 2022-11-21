@@ -7,7 +7,7 @@ import { Registration } from "../Registration/Registration";
 export const Header = () => {  
     return <>
         <div className={style.header}>
-            <h1>Settings Store</h1>
+            <h1 className={style.title}>Settings Store</h1>
             <Search/>
             <div className={style.headerHud}>
                 <div className={style.buttons}>

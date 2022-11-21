@@ -1,16 +1,18 @@
 .header{
-    min-height: 71px;
+    height: 71px;
     background-color: #3B3B44;
-    position: sticky;
     left: 0;
     top: 0;
     display: flex;
     justify-content: space-between;
     color: white;
     padding: 0px 25px ;
-    align-items: baseline;
-    padding-top: 7px;
+    align-items: center;
+    position: sticky;
     z-index: 50;
+
+ 
+
 }
 .headerHud {
     display: flex;
@@ -22,6 +24,7 @@
     gap: 5px;
     display: flex;
     justify-content: space-between;
+    
 }
 
 @media screen and (max-width: 850px) {
@@ -34,4 +37,3 @@
         gap: 0px;
     }
   }
-

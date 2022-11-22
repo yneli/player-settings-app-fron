@@ -1,6 +1,5 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import axios from "axios";
-import { stat } from "fs";
 
 export const fetchAllGames = createAsyncThunk("games/fetchAllGames", async() => {
     const url = "https://player-info135.herokuapp.com/db";
@@ -33,6 +32,23 @@ export const fetchPlayers = createAsyncThunk<any, any>("games/fetchPlayers", asy
     });
     return data;
 });
+export const fetchSettings = createAsyncThunk<any, any>("games/fetchSettings", async({game,tagName}) => {
+    const url = "https://player-info135.herokuapp.com/db";
+    let { data } = await axios.request({
+        url: url,
+        method: "post",
+        data: {
+            "dbtype": "sel_gamer",
+            "id_game": game,
+            "id_gamer": tagName,
+        },
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+        },
+    });
+    return data;
+});
 const initialState:any = {
     items: null,
     status: "loading",
@@ -40,6 +56,10 @@ const initialState:any = {
     game: {
         gamesName: null,
         urlImg: null,
+    },
+    settingsItem: {
+        devicesSettings: null,
+        playerSettings: null,
     },
 };
 const gamesSlice = createSlice({
@@ -59,15 +79,23 @@ const gamesSlice = createSlice({
             .addCase(fetchPlayers.pending, (state) => {
                 state.players = null;})
             .addCase(fetchPlayers.fulfilled, (state, action) => {
-                console.log(action.payload[0]);
                 state.game.gamesName = action.payload[0].name;
                 state.game.urlImg = action.payload[0].game_url;
                 state.players = action.payload; })
             .addCase(fetchPlayers.rejected, (state) => {
                 state.players = null;
                 state.loading = ""
-            });
-            
+            })
+            .addCase(fetchSettings.pending, (state) => {
+                state.players = null;})
+            .addCase(fetchSettings.fulfilled, (state, action) => { 
+                state.settingsItem.devicesSettings = action.payload[0].settings;
+                state.settingsItem.playerSettings = action.payload[0];
+            })
+            .addCase(fetchSettings.rejected, (state) => {
+                state.players = null;
+                state.loading = ""
+            })  
     },
 });
 export const gamesReducer = gamesSlice.reducer;

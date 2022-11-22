@@ -13,7 +13,7 @@ export const Sidebaritem = ({
                 [style.active]: active,
             })}>
                 <img src={icon} />
-                <h5>{title}</h5> 
+                <h5 className={style.title}>{title}</h5> 
             </div>        
         </Link>
 </>;

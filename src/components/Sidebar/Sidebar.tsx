@@ -6,7 +6,7 @@ import React from "react";
 export const Sidebar = () => {
     const [ target, setTarget ] = React.useState(".");
     return <div className={style.container}> <div className={style.sidebar}>
-        <h2 className={style.menu}>Menu</h2>
+        <h2 className={style.menu}></h2>
         {SIDEBAR_ITEMS?.map(item => <Sidebaritem target={() => setTarget(item.path)} {...item} active={item.path === target}/>)}
     </div>
     </div>;

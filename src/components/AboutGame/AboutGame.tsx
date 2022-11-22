@@ -14,8 +14,6 @@ export const AboutGame = () => {
     },[games]);
     const data = useAppSelector((state) => state.games.players);
     const game = useAppSelector((state) => state.games.game);
-    console.log(game);
-    
     
     return <div className={style.container}>
         <div className={style.about}><h3>{game.gamesName}</h3>

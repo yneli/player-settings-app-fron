@@ -1,35 +1,70 @@
 .container {
-    width: 100%;
+    width: 80%;
     padding-top: 100px;
     display: flex;
-    gap: 1px;
+    justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
+
 };
-.player {
-    display: flex;
-    width: 500px;
-    justify-content: space-between;
-    flex-direction: column;
-    background-color: #494953;
-    height: 488px;
-    border-radius: 13px
-};
-.who {
-    display: flex;
-    flex-direction: column;
-};
-.device {
-    width: 500px;
-    height: 488px;
-    background-color: #494953;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 13px
-};
+.imgAbout{
+    height: 147px;
+    max-width: 120px;
+    border-radius: 13px;
+}
 
 .img {
-    height: 295px;
-    width: 295px;
-    border-radius: 15px 15px 15px 15px;
+    width: 300px;
+    height: 300px;
+    border-radius: 13px;
+}
+.player {
+    min-width: 49.5%;
+    height: 100%;
+    background-color: #494953;;
+    border-radius: 13px;
+}
+.devices {
+    min-width: 49.5%;
+    background-color: #494953;;
+    height: 100%;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.player {
+    display: flex;
+    
+}
+.sens {
+    display: flex;
+    flex-direction: column;
+    .dpi{
+        display: flex;
+    };
+    .gameSens {
+        display: flex;
+    };  
+}
+
+.imgContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.mouse {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-size: 25px;
+    font-weight: lighter;
 }

@@ -3,21 +3,19 @@ import axios from "axios";
 
 
 export const fetchAllGames = createAsyncThunk("games/fetchAllGames", async() => {
-    const params = {
-        "dbtype": "sel_all_games",
-    };
-    const requestOptions = {
-        method: "POST",
-        body: JSON.stringify(params),
+    const url = "https://player-info135.herokuapp.com/db";
+    let { data } = await axios.request({
+        url: url,
+        method: "post",
+        data: {
+            "dbtype": "sel_all_games",
+        },
         headers: {
             "Content-Type": "application/json",
-},
-          
-    };
-    const response = await fetch("https://player-info135.herokuapp.com/db", requestOptions);
-    const data = await response.json();
-    console.log(data);
-
+            "Accept": "application/json",
+        },
+    });
+    return data;
 });
 
 const initialState = {

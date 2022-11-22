@@ -1,14 +1,16 @@
 .container {
-    width: 100%;
+    width: 80%;
     padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-    align-items: center;
+    margin: 0 auto;
+
 }
 .about {
     display: flex;
     align-items: center;
+    align-content: flex-end;
 }
 .search {
     align-items: flex-end;
@@ -17,4 +19,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+}
+
+.title{
+    font-size: 25px;
+    padding-left: 30px;
 }

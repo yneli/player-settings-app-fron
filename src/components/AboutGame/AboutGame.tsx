@@ -16,8 +16,9 @@ export const AboutGame = () => {
     const game = useAppSelector((state) => state.games.game);
     
     return <div className={style.container}>
-        <div className={style.about}><h3>{game.gamesName}</h3>
-        <img src={game.urlImg} alt="" />
+        <div className={style.about}>
+            <img src={game.urlImg} alt="" />
+            <h3 className={style.title}>{game.gamesName}</h3>
         </div>
         <div className={style.search}>
             <SmallSearch/>

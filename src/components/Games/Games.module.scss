@@ -4,7 +4,7 @@
     flex-direction: column;
     gap: 25px;
     align-items: center;
-    padding: 100px 15px 0px 15px;
+    padding: 100px 0px 0px 15px;
 }
 
 .switcher {
@@ -29,17 +29,7 @@
 
 }
 
-@media screen and (max-width: 1400px) {
-    .items { 
-        
-    }
-  }
-  @media screen and (max-width: 1200px) {
-    .sorted {
-        justify-content: flex-start;
 
-    }
-  }
 
   @media screen and (max-width: 850px) {
     .sorted {
@@ -47,12 +37,25 @@
 
     }
     .games {
-        padding-top: 0px;
+        padding: 10px;
     }
     .items { 
         gap: 0px;
         display: flex;
         flex-wrap: wrap;
         
+        
+    }
+  }
+
+  @media screen and (max-width: 380px) {
+    .games {
+        padding: 1px;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    .games {
+        padding-left: 90px;
     }
   }

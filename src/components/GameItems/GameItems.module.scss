@@ -1,14 +1,13 @@
 .gameitems {
-    
-
+    display: flex;
+    img {
+        max-width: 100%;
+        align-items: center;
+    }
 }
-
-
-
 @media screen and (max-width: 850px) {
     .gameitems {
-        flex-direction: 50%;
-
+     flex: 1 1 auto;
     }
   
   }

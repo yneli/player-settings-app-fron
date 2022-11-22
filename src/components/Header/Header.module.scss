@@ -6,7 +6,6 @@
     display: flex;
     justify-content: space-between;
     color: white;
-    padding: 0px 25px ;
     align-items: center;
     position: sticky;
     z-index: 50;
@@ -43,5 +42,8 @@
     }
     .buttons {
         display: none;
+    }
+    .header {
+        position: relative;
     }
   }

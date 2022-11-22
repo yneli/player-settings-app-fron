@@ -11,7 +11,7 @@ export const Games = () => {
             <SmallSearch/>
         </div>
         <div className={style.items}>
-        <GameItems/>
+            <GameItems/>
             <GameItems/>
             <GameItems/>
             <GameItems/>

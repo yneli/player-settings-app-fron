@@ -9,6 +9,7 @@ export const Header = () => {
         <div className={style.header}>
             <h1 className={style.title}>Settings Store</h1>
             <Search/>
+          
             <div className={style.headerHud}>
                 <div className={style.buttons}>
                     <AppDrawer size={"250px"} title={"Sign In"}><Login/></AppDrawer>

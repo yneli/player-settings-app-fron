@@ -1,10 +1,10 @@
 .games {
     width: 100%;
-    padding-top: 100px;
     display: flex;
     flex-direction: column;
     gap: 25px;
-
+    align-items: center;
+    padding: 100px 15px 0px 15px;
 }
 
 .switcher {
@@ -19,14 +19,14 @@
     gap: 1px;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1000px;
+
 }
 .sorted {
     display: flex;
-    justify-content: space-between;
-    width: 86%;
+    align-self: flex-end;
+    gap: 7px;
 
-
- 
 }
 
 @media screen and (max-width: 1400px) {
@@ -53,5 +53,6 @@
         gap: 0px;
         display: flex;
         flex-wrap: wrap;
+        
     }
   }

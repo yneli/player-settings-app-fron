@@ -1,10 +1,10 @@
 .games {
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     gap: 25px;
     margin: 0 auto;
-    padding: 100px 0px 0px 15px;
+    padding: 100px 0px 0px 0px;
 }
 
 .switcher {
@@ -25,11 +25,7 @@
 .sorted {
     display: flex;
     gap: 7px;
-
 }
-
-
-
   @media screen and (max-width: 850px) {
     .sorted {
         display: none;

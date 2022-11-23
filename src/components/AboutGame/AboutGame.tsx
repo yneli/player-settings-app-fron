@@ -5,6 +5,7 @@ import React from "react";
 import { useAppDispatch, useAppSelector } from "../../redux/hook";
 import { fetchPlayers } from "../../redux/slices/games/gamesSlice";
 import { useParams } from "react-router-dom";
+import { AppPagination } from "../Pagination/AppPagination";
 
 export const AboutGame = () => {
     const dispatch = useAppDispatch();
@@ -26,6 +27,9 @@ export const AboutGame = () => {
         <div className={style.cards}>
             {data?.map// @ts-ignore
             (item => <CardPlayer {...item}/>)}
+        </div>
+        <div className={style.pagination}>
+            <AppPagination/>
         </div>
     </div>;
 };

@@ -70,9 +70,13 @@ const gamesSlice = createSlice({
     extraReducers: (builder) => {
         builder
             .addCase(fetchAllGames.pending, (state) => {
-                state.items = null;})
+                state.items = null;
+                state.status = "loading";
+            })
             .addCase(fetchAllGames.fulfilled, (state, action) => {
-                state.items = action.payload; })
+                state.items = action.payload;
+                state.status = "success";
+            })
             .addCase(fetchAllGames.rejected, (state) => {
                 state.items = null;
             })
